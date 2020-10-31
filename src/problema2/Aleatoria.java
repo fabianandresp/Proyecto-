@@ -1,10 +1,10 @@
 
-package proyectodeprogramacion;
+package problema2;
 
 //import java.util.Scanner;
 
 
-public class CalculadoraAvanzada {
+public class Aleatoria {
   private static int[] fisher_yates(int[] arreglo) {
     // recorremos todo el arreglo
     for(int i = arreglo.length - 1; i > 0; i--) {
