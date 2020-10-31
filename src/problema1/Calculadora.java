@@ -21,9 +21,14 @@ public class Calculadora {
         int resultado;
         Scanner entrada = new Scanner(System.in);
         String operador;
-
+        
+        
+        
+        System.out.println("Ingrese el primero numero: ");
         a = entrada.nextInt();
+        System.out.println(" ¿Que operacion desea realizar? ");
         operador = entrada.next();
+        System.out.println("Ingrese el segundo numero: ");
         b = entrada.nextInt();
 
         if (operador.equals("+")) {
