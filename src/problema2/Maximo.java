@@ -12,29 +12,40 @@ import java.util.Scanner;
  * @author pimie
  */
 public class Maximo {
-    public static void main( String[] args){
-        
-        int numero = 0;
-        int [] almacen = new int [10];
-        Scanner input = new Scanner(System.in);
-        
-        for (int i =0; i<10; i++){
-            System.out.println(" ingresa el numero:");
-            almacen[i] = input.nextInt();
-            numero = numero + almacen[i];
-        }
-        for (int i = 0; i<10 ; i++){
-            System.out.println (" En la posicion " + (i+1)+ "se guardo: " + almacen[i]);
-            
-         double result = maximo(almacen[i]);
-         System.out.println ("El numero maximo es " + result);
-        }
-        
-        
-        }
-        
+    public static void main( String[] args){   
+    
+    Scanner input = new Scanner (System.in);
+    
+    int [] caja = new int[3];
+    int posMax= 0;
+    
+    
+    for (int i =0; i<3;i++){
+        System.out.println("Ingrese un numero: ");
+        caja[i] = input.nextInt();
+         System.out.println("En la posicion "+(i)+" se guardo: "+caja[i]);
     }
-   
+       
+   int valorMax=Integer.MIN_VALUE;
+   for ( int i = 0; i<3; i++){
+       if ( caja[i]>valorMax)
+           valorMax=caja[i];
+    
+   }
+    System.out.println("El valor Maximo es : " + valorMax);
+    
+    
+    
+    
+    
+    /*for (int i=0; i<caja.length;i++){
+        if (caja[i]>caja[]){
+            max=i;
+ */
+        
+       
+    }
+ 
     
     
     
@@ -50,48 +61,5 @@ public class Maximo {
     
     
     
-    
-    
- /*public static void main(String[] args)
-     {
+    }
       
-       Scanner input = new Scanner(System.in);
-
-       
-       System.out.print(
-         "Ingresa 3 numeros: ");
-       double num1 = input.nextDouble(); 
-       double num2 = input.nextDouble(); 
-       double num3 = input.nextDouble(); 
-
-     
-       double resultado = maximum(num1, num2, num3);
-
-       
-       System.out.println("El numero maximo es: " + result);
-     }
-
-            
-     public static double maximum(double x, double y, double z)     
-     {                                                              
-       double maximumValue = x; 
-      
-       if (y > maximumValue)                                       
-         maximumValue = y;                                        
-       
-       if (z > maximumValue)                                       
-         maximumValue = z;                                        
-
-       return maximumValue;                                        
-     }                                                              
-    
-   
-}
-	
-    
-    
-    
-    
-
-
-    
