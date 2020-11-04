@@ -10,5 +10,13 @@ package problema8;
  * @author pimie
  */
 public class Monedas {
-    
+    int[] monedas = [1000,500,100,50,25]
+
+int monto = 1700
+int residuo = monto
+for (moneda in monedas) {
+    int cantidad = residuo / moneda
+    println("Cantidad de Mondedas de $moneda = $cantidad")
+    residuo = residuo % moneda
+}
 }
