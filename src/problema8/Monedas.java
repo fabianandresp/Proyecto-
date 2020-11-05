@@ -13,7 +13,36 @@ import java.util.Scanner;
  */
 public class Monedas {
     
-    public static void main(String[] args){
+    public static void main(String[] args) {
+       
+        Scanner input = new Scanner(System.in);
+        
+        int dinero[]={1000, 500, 100, 10, 5, 1 }; 
+        int dividir[];
+        dividir = new int[6];
+        
+        int i;
+        int monto;
+        
+        System.out.println("Ingrese un monto");
+        monto = input.nextInt();
+        
+        for(i = 0; i<= 5; i++) {
+            dividir[i] = 0;
+            dividir[i] = monto / dinero[i]; 
+            monto = monto - (dividir[i] * dinero[i]);
+        }
+        
+        for (i=0; i<= 5; i ++) {
+            if (dividir[i] != 0) {
+                System.out.print(dinero[i]);
+                System.out.print(" = ");
+                System.out.println(dividir[i]);
+            }
+    }
+    }
+}
+    /*public static void main(String[] args){
        
     
     Scanner input = new Scanner(System.in);
@@ -48,5 +77,3 @@ for (moneda in monedas) {
     residuo = residuo % moneda
 }
 }*/
-}
-}
