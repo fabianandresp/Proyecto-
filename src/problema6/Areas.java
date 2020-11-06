@@ -63,7 +63,7 @@ public class Areas {
 
             }
 
-        } while (op != 4);
+        } while (opcion != 4);
 
     }
 
