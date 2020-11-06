@@ -12,7 +12,7 @@ import java.util.Scanner;
  * @author pimie
  */
 public class Problema3 {
-    //Impuesto sobre la renta
+    //Impuesto sobre la renta 
     
     public static void main (String[] args){
     
