@@ -18,7 +18,7 @@ public class NotasAlumnos {
        public static void main (String[] args){
        
            Scanner input = new Scanner (System.in);
-           ArrayList <Alumnos> ArrayListAlumnos = new ArrayList();
+           ArrayList ArrayListAlumnos = new ArrayList();
            Alumnos objAlumnos = new Alumnos();
            fecha objFecha = new Fecha();
            
