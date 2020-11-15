@@ -5,7 +5,7 @@
  */
 package problema9;
 
-import java.util.Scanner;
+
 
 /**
  *
@@ -51,27 +51,5 @@ public class Compugrama6
        
         }
            }
-}
-/*
-        Scanner input = new Scanner(System.in);
-       int n;
-       
-        System.out.println("Digite el valor de n");
-        
-        n = input.nextInt();
-         
-        int y=(n-1);
-        for(int i=0;i<n;i++){
-        for(int j=0;j<n;j++){
-        if((i==j)||((i+j)==y)){
-        System.out.print("*");
-        }
-        else{
-        System.out.print(" ");
-        }
-     
-        }System.out.println();
-        }
-    }
 }
 
