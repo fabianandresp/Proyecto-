@@ -5,6 +5,8 @@
  */
 package problemaNotas;
 
+import java.util.Scanner;
+
 /**
  *
  * @author pimie
@@ -26,8 +28,7 @@ public class NotaAlumnoTester {
         a.datosAlumno();
 
         Notas b = new Notas();
-
-
+        b.getNota();
     }
 
 }
