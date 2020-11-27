@@ -15,20 +15,18 @@ public class NotaAlumnoTester {
 
     public static void main(String[] args) {
 
-        Alumnos a = new Alumnos();
-
-        a.setNombre("Fabian");
-        a.setApellidos("Pimiento");
-        a.setCedula(1152);
-
-        a.getNombre();
-        a.getApellidos();
-        a.getCedula();
+        Alumnos a = new Alumnos("Fabian", "Pimiento", 1152);
 
         a.datosAlumno();
 
-        Notas b = new Notas();
+        int[] ejemplo = {20, 34, 56};
+        Notas b = new Notas(ejemplo);
         b.getNota();
+
     }
 
 }
+// declarar y definir es lo mismo 
+// inicializar una variable es declararla + asignar un valor ( = ) 
+// operador de intanciar: new
+// operador de asignacion: = 

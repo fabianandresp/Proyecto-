@@ -11,7 +11,7 @@ package problemaNotas;
  */
 public class Alumnos {
 
-    //Propiedades 
+    //Propiedades Variables globales
     String nombre;
     String apellidos;
     double cedula;
