@@ -11,6 +11,7 @@ public class Tester {
         Scanner s = new Scanner(System.in);
         Menu me = new Menu();
         Alumno alum = new Alumno();
+        PadreFamilia prueba = new PadreFamilia();
 
         me.opciones();
         System.out.println("¿Que opcion desea?");
@@ -48,19 +49,32 @@ public class Tester {
                     me.opciones3();
                     break;
                 case 3:
-                    alum.mostrardatos();
-                    sistema.mostrarExamenes();
-                    me.opciones4();
+                    System.out.println("Digite el nombre del Padre ");
+                    String n = s.next();
+                    System.out.println("Digite el apellido del Padre");
+                    String a = s.next();
+                    
+                    prueba.setNombre(n);
+                    prueba.setApellido(a);
+                    
+                    me.opcionNew();
+
                     break;
                 case 4:
+                    alum.mostrardatos();
+                    sistema.mostrarExamenes();
+                    prueba.mostrarDatosPapa();
+                    alum.imprimirPadreFamlia();
+                    me.opciones4();
+
+                    break;
+                case 5:
 
                     System.out.println("ADIOS PROFE!");
                     System.out.println(" ");
 
                     me.opciones();
                     System.out.println("¿Que opcion desea?");
-
-                    break;
 
             }
 

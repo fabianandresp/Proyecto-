@@ -1,12 +1,16 @@
 package poo.problema9;
 
+import java.util.Scanner;
 
 public class Alumno {
+
     String nombre;
     String apellido;
+    PadreFamilia padre;
     int carne;
-    
-    public Alumno(){
+    Scanner input = new Scanner(System.in);
+
+    public Alumno() {
     }
 
     public Alumno(String nombre, String apellido, int carne) {
@@ -14,14 +18,26 @@ public class Alumno {
         this.apellido = apellido;
         this.carne = carne;
     }
-    
-    
-    public void mostrardatos(){
-        System.out.println(nombre+" "+apellido+" "+ carne);
-    }
-    
-    //metodos gets y sets
 
+    public Alumno(PadreFamilia padre, String nombre, String apellido, int carne) {
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.carne = carne;
+        this.padre = padre;
+    }
+
+    public void mostrardatos() {
+        System.out.println(nombre + " " + apellido + " " + carne);
+    }
+
+    public void imprimirPadreFamlia() {
+        System.out.println(padre.getNombre() + " " + padre.getApellido());
+        System.out.println(padre);
+        
+
+    }
+
+    //metodos gets y sets
     public String getNombre() {
         return nombre;
     }
@@ -45,5 +61,13 @@ public class Alumno {
     public void setCarne(int carne) {
         this.carne = carne;
     }
-    
+
+    public PadreFamilia getPadre() {
+        return padre;
+    }
+
+    public void setPadre(PadreFamilia padre) {
+        this.padre = padre;
+
+    }
 }
