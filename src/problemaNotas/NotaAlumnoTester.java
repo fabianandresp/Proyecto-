@@ -15,13 +15,17 @@ public class NotaAlumnoTester {
 
     public static void main(String[] args) {
 
-        Alumnos a = new Alumnos("Fabian", "Pimiento", 1152);
+        Alumnos a = new Alumnos();
+        
+       a.ingresarDatosAlumno();
 
         a.datosAlumno();
 
-        int[] ejemplo = {20, 34, 56};
-        Notas b = new Notas(ejemplo);
-        b.getNota();
+        Notas b = new Notas();
+        
+        b.ingresarNota();
+        
+        b.mostrarNotas();
 
     }
 

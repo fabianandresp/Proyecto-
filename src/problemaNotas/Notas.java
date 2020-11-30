@@ -5,6 +5,9 @@
  */
 package problemaNotas;
 
+import java.util.Scanner;
+import poo.problema9.Examen;
+
 /**
  *
  * @author pimie
@@ -13,35 +16,32 @@ package problemaNotas;
 // fuera del POO son varibles globales y metodos o funciones
 public class Notas {
 
-    int[] nota = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-    // Variable Global, tiene un alcance en todos los metodos de la clase
+    Scanner input = new Scanner(System.in);
 
+    //int[] almacenNotas;
+    int notas;
+   
+
+    // Variable Global, tiene un alcance en todos los metodos de la clase
     public Notas() {
     }
 
-    // int[] nota = Variable local o parametros, solo tienen un alcance local (dentro del metodo)
-    public Notas(int[] nota) {
+    public void ingresarNota() {
 
-        for (int i = 0; i < this.nota.length; i++) {
-            if (this.nota[i] >= 4) {
-                System.out.println("APROBADO");
+        System.out.println("Ingresa una Nota: ");
+        notas = input.nextInt();
 
-            } else if (this.nota[i] <= 3) {
-                System.out.println("REPROBADO");
-            }
+        
+            
         }
-        System.out.println(nota[0]);
-        System.out.println(nota[1]);
-        System.out.println(nota[2]);
+    public void mostrarNotas(){
+        System.out.println("La nota del alumno es: " + notas);
+    }
+    
+   
 
     }
 
-    public int[] getNota() {
-        return nota;
-    }
 
-    public void setNota(int[] nota) {
-        this.nota = nota;
-    }
+// int[] nota = Variable local o parametros, solo tienen un alcance local (dentro del metodo)
 
-}

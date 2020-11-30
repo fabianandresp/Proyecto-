@@ -5,11 +5,15 @@
  */
 package problemaNotas;
 
+import java.util.Scanner;
+
 /**
  *
  * @author pimie
  */
 public class Alumnos {
+    Scanner input = new Scanner (System.in);
+    
 
     //Propiedades Variables globales
     String nombre;
@@ -24,6 +28,15 @@ public class Alumnos {
         this.apellidos = apellidos;
         this.cedula = cedula;
 
+    }
+    public void ingresarDatosAlumno(){
+        
+        System.out.println("Ingrese el nombre del alumno: ");
+        nombre = input.next();
+        
+        System.out.println("Ingrese los apellidos del alumno: ");
+        apellidos = input.next();
+        
     }
 
     public void datosAlumno() {

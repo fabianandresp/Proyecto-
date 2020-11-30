@@ -53,17 +53,16 @@ public class Tester {
                     String n = s.next();
                     System.out.println("Digite el apellido del Padre");
                     String a = s.next();
-                    
+
                     prueba.setNombre(n);
                     prueba.setApellido(a);
-                    
+
                     me.opcionNew();
 
                     break;
                 case 4:
                     alum.mostrardatos();
                     sistema.mostrarExamenes();
-                    prueba.mostrarDatosPapa();
                     alum.imprimirPadreFamlia();
                     me.opciones4();
 

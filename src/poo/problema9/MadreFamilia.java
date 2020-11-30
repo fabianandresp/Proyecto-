@@ -9,27 +9,29 @@ package poo.problema9;
  *
  * @author pimie
  */
-public class PadreFamilia {
-    
-   String nombre;
-   String apellido; 
+public class MadreFamilia {
+   //propiedades
+    String nombre;
+    String apellido;
+    int edad;
+    int carne;
 
-    public PadreFamilia(String nombre, String apellido) {
+    // Metodos
+
+    public MadreFamilia(String nombre, String apellido) {
         this.nombre = nombre;
         this.apellido = apellido;
     }
 
-    PadreFamilia() {
-   
-    }
-  
-  
-
     @Override
     public String toString() {
-        return "PadreFamilia{" + "nombre=" + nombre + ", apellido=" + apellido + '}';
+        return "MadreFamilia{" + "nombre=" + nombre + ", apellido=" + apellido + ", edad=" + edad + ", carne=" + carne + '}';
     }
-
+    
+    
+    
+    
+    //Get y Set
     public String getNombre() {
         return nombre;
     }
@@ -45,8 +47,22 @@ public class PadreFamilia {
     public void setApellido(String apellido) {
         this.apellido = apellido;
     }
-   
-   
-   
-   
+
+    public int getEdad() {
+        return edad;
+    }
+
+    public void setEdad(int edad) {
+        this.edad = edad;
+    }
+
+    public int getCarne() {
+        return carne;
+    }
+
+    public void setCarne(int carne) {
+        this.carne = carne;
+    }
+    
+    
 }
