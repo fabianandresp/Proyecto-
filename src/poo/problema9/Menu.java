@@ -49,6 +49,9 @@ public class Menu {
         System.out.println("5.- FINALIZAR");
 
     }
+    public void opcionnew2(){
+        System.out.println("5.- FINALIZAR");
+    }
 
     public void opciones4() {
         System.out.println("1.- INGRESAR DATOS DE ALUMNOS");

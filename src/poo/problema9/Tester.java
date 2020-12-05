@@ -71,6 +71,7 @@ public class Tester {
                     alum.mostrardatos();
                     sistema.mostrarExamenes();
                     alum.imprimirPadreFamlia();
+                    me.opcionnew2();
 
                     break;
                 case 5:
