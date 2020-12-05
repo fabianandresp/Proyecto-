@@ -10,9 +10,9 @@ package poo.problema9;
  * @author pimie
  */
 public class PadreFamilia {
-    
-   String nombre;
-   String apellido; 
+
+    String nombre;
+    String apellido;
 
     public PadreFamilia(String nombre, String apellido) {
         this.nombre = nombre;
@@ -20,10 +20,8 @@ public class PadreFamilia {
     }
 
     PadreFamilia() {
-   
+
     }
-  
-  
 
     @Override
     public String toString() {
@@ -45,8 +43,5 @@ public class PadreFamilia {
     public void setApellido(String apellido) {
         this.apellido = apellido;
     }
-   
-   
-   
-   
+
 }

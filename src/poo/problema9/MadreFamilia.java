@@ -10,13 +10,17 @@ package poo.problema9;
  * @author pimie
  */
 public class MadreFamilia {
-   //propiedades
+    //propiedades
+
     String nombre;
     String apellido;
     int edad;
     int carne;
 
     // Metodos
+    public MadreFamilia() {
+
+    }
 
     public MadreFamilia(String nombre, String apellido) {
         this.nombre = nombre;
@@ -27,10 +31,7 @@ public class MadreFamilia {
     public String toString() {
         return "MadreFamilia{" + "nombre=" + nombre + ", apellido=" + apellido + ", edad=" + edad + ", carne=" + carne + '}';
     }
-    
-    
-    
-    
+
     //Get y Set
     public String getNombre() {
         return nombre;
@@ -63,6 +64,5 @@ public class MadreFamilia {
     public void setCarne(int carne) {
         this.carne = carne;
     }
-    
-    
+
 }

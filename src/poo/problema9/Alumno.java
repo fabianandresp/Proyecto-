@@ -7,6 +7,7 @@ public class Alumno {
     String nombre;
     String apellido;
     PadreFamilia padre;
+    MadreFamilia madre;
     int carne;
     Scanner input = new Scanner(System.in);
 
@@ -31,9 +32,9 @@ public class Alumno {
     }
 
     public void imprimirPadreFamlia() {
+
         System.out.println(padre.getNombre() + " " + padre.getApellido());
-        System.out.println(padre);
-        
+        System.out.println(madre.getNombre() + " " + madre.getApellido());
 
     }
 
@@ -70,4 +71,13 @@ public class Alumno {
         this.padre = padre;
 
     }
+
+    public MadreFamilia getMadre() {
+        return madre;
+    }
+
+    public void setMadre(MadreFamilia madre) {
+        this.madre = madre;
+    }
+
 }
